@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SOAP Notes</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<div class="container">
+  	<!-- Content here -->
+  	<form>
+		  <div class="form-group row">
+		  	<!-- Date should display current date (done on JS/backend) -->
+		    <label for="Datum" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Datum</label>
+		    	<div class="col-sm-11">
+			    	<input type="date" class="form-control" id="Datum" placeholder="Datum" readonly> 
+			   </div>
+		  </div>
+
+		  <div class="form-group row">
+		    <label for="Namn" class="col-sm-12 col-md-1 col-lg-1 col-form-label">Namn</label>
+		    	<div class="col-sm-12 col-md-5 col-lg-5">
+			    	<input type="text" class="form-control" id="Namn" placeholder="Namn">
+			   </div>
+
+			<label for="Fodelsedag" class="col-sm-12 col-md-2 col-lg-1 col-form-label">Fodelsedag</label>
+			   <div class="col-sm-12 col-md-4 col-lg-5">
+			    	<input type="date" class="form-control" id="Fodelsedag" placeholder="Fodelsedag">
+			   </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="Address" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Address</label>
+		    	<div class="col-sm-11">
+			    	<input type="text" class="form-control" id="Address" placeholder="Address">
+			   </div>
+		  </div>
+
+			<div class="form-group row">
+					    <label for="Epost" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Epost</label>
+					    	<div class="col-sm-11">
+						    	<input type="text" class="form-control" id="Epost" placeholder="Epost">
+						   </div>
+					  </div>
+			<div class="form-group row">
+					    <label for="Mobil" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Mobil</label>
+					    	<div class="col-sm-11">
+						    	<input type="text" class="form-control" id="Mobil" placeholder="Mobil">
+						   </div>
+					  </div>
+			<div class="form-group row">
+				<p class="col-sm-4 col-lg-4">Do you want to receive promos via Email?</p>
+				<div class="form-check col-sm-2 col-lg-1">
+				  <input class="form-check-input" type="radio" name="specialOffer" id="radioYes" value="Yes" checked>
+				  <label class="form-check-label" for="radioYes">
+				    Yes
+				  </label>
+				</div>
+				<div class="form-check col-sm-2 col-lg-1">
+				  <input class="form-check-input" type="radio" name="specialOffer" id="radioNo" value="No">
+				  <label class="form-check-label" for="radioNo">
+				    No
+				  </label>
+				</div>
+			</div>
+				<div class="form-group row">
+				<p class="col-sm-12">Previous and present diseases?</p>
+					<ul class="col-sm-6 col-lg-3">
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							  <input type="checkbox" class="custom-control-input" id="customCheck1">
+							  <label class="custom-control-label" for="customCheck1">Diabetes</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck2">
+							<label class="custom-control-label" for="customCheck2">Artros/Ledbesvar</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck3">
+							<label class="custom-control-label" for="customCheck3">Cancer</label>
+							</span>	
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck4">
+							<label class="custom-control-label" for="customCheck4">Epilepsi</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck5">
+							<label class="custom-control-label" for="customCheck5">Blodarsjuka</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck6">
+							<label class="custom-control-label" for="customCheck6">Fibromyalgi</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck7">
+							<label class="custom-control-label" for="customCheck7">Hjarta/karlsjukdom</label>
+							</span>
+						</li>
+					</ul>
+					<ul class="col-sm-6 col-lg-3">
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							  <input type="checkbox" class="custom-control-input" id="customCheck8">
+							  <label class="custom-control-label" for="customCheck8">Allergi</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck9">
+							<label class="custom-control-label" for="customCheck9">Osteoporos</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-8 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck10">
+							<label class="custom-control-label" for="customCheck10">Hogt blodtryck</label>
+							</span>	
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck11">
+							<label class="custom-control-label" for="customCheck11">Astma</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck12">
+							<label class="custom-control-label" for="customCheck12">Imflammation</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-8 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck13">
+							<label class="custom-control-label" for="customCheck13">Kronisk Migran</label>
+							</span>
+						</li>
+						<li>
+							<span class="custom-control custom-checkbox col-sm-6 col-md-12">
+							<input type="checkbox" class="custom-control-input" id="customCheck14">
+							<label class="custom-control-label" for="customCheck14">Diskbrak</label>
+							</span>
+						</li>
+					</ul>
+				</div>
+					<div class="form-group row">
+					    <label for="Operation" class="col-sm-12 col-md-2 col-lg-1 col-form-label">Operation</label>
+					    	<div class="col-sm-12 col-md-4 col-lg-3">
+						    	<input type="text" class="form-control" id="Operation" placeholder="Operation">
+						   </div>
+
+						<label for="Nar" class="col-sm-12 col-md-1 col-lg-1 col-form-label">Nar?</label>
+						   <div class="col-sm-12 col-md-4 col-lg-3">
+						    	<input type="text" class="form-control" id="Nar" placeholder="Nar?">
+						   </div>
+					   <label for="Frakturer" class="col-sm-12 col-md-2 col-lg-1 col-form-label">Frakturer</label>
+						   <div class="col-sm-12 col-md-4 col-lg-3">
+						    	<input type="text" class="form-control" id="Frakturer" placeholder="Frakturer">
+						   	</div>
+					</div>
+
+					<div class="form-group row">
+					    <label for="medicinering1" class="col-sm-6 col-md-2 col-lg-2 col-form-label">Tidigare medicinering</label>
+					    	<div class="col-sm-5">
+						    	<input type="text" class="form-control" id="medicinering1" placeholder="Tidigare medicinering">
+						   </div>
+						<label for="Vartor1" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Vartor?</label>
+					    	<div class="col-sm-4">
+						    	<input type="text" class="form-control" id="Vartor1" placeholder="Vartor?">
+						   </div>
+
+					  </div>
+
+					<div class="form-group row">
+					    <label for="medicinering2" class="col-sm-6 col-md-2 col-lg-2 col-form-label">Nuvarande medicinering</label>
+					    	<div class="col-sm-5">
+						    	<input type="text" class="form-control" id="medicinering2" placeholder="Nuvarande medicinering">
+						   </div>
+						<label for="Vartor2" class="col-sm-6 col-md-1 col-lg-1 col-form-label">Vartor?</label>
+					    	<div class="col-sm-4">
+						    	<input type="text" class="form-control" id="Vartor2" placeholder="Vartor?">
+						   </div>
+					  </div>
+					<div class="form-group row col-lg-12">
+						<span class="custom-control custom-checkbox col-sm-6">
+							<input type="checkbox" class="custom-control-input" id="customCheck15">
+							<label class="custom-control-label" for="customCheck15">Gravid (i fylles endast av fertil)</label>
+							</span>
+
+						<label for="veckor" class="col-sm-2 col-md-2 col-form-label">Hur manga veckor?</label>
+					    	<div class="col-sm-4 col-md-4">
+						    	<input type="text" class="form-control col-2 col-sm-5 col-md-3 col-lg-2" id="veckor" placeholder="">
+						   </div>
+					</div>
+
+					<div class="form-group row col-lg-12">
+						<span class="custom-control custom-checkbox col-sm-6">
+							<input type="checkbox" class="custom-control-input" id="customCheck16">
+							<label class="custom-control-label" for="customCheck16">Tidigare massage behandling?</label>
+							</span>
+						</div>
+
+
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+
+</body>
+</html>
