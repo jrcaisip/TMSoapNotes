@@ -10,3 +10,7 @@ ul{
 h1 {
 	text-align: center;
 }
+
+button:focus {
+	outline:0 !important;
+}
