@@ -1,0 +1,27 @@
+body{
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+button:focus {
+	outline:0 !important;
+}
+
+select {
+    border:1px solid #ccc;
+    vertical-align:top;
+    height:30px;
+}
+input, select{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
