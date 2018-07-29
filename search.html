@@ -43,7 +43,7 @@
     <h1>This is the Search Patient Record Page</h1>
 
     <div class="container">
-    	<table id="myTable" class="display">
+    	<table id="myTable" class="display table table-striped table-bordered">
     		<caption>List of patients</caption>
 		  <thead>
 		    <tr>
@@ -51,6 +51,7 @@
 		      <th>Name</th>
 		      <th>Email</th>
 		      <th>Mobil</th>
+          <th>Action</th>
 		    </tr>
 		  </thead>
 		  <tbody>
@@ -59,18 +60,33 @@
 		      <td>Mark</td>
 		      <td>Otto</td>
 		      <td>@mdo</td>
+          <td class="">
+            <span class="col-4 col-md-2 col-lg-2">X</span>
+            <span class="col-4 col-md-2 col-lg-2">Y</span>
+            <span class="col-4 col-md-2 col-lg-2">Z</span>
+          </td>
 		    </tr>
 		    <tr>
 		      <th>2</th>
 		      <td>Jacob</td>
 		      <td>Thornton</td>
 		      <td>@fat</td>
+          <td>
+            <span class="col-4 col-md-2 col-lg-2">X</span>
+            <span class="col-4 col-md-2 col-lg-2">Y</span>
+            <span class="col-4 col-md-2 col-lg-2">Z</span>
+          </td>
 		    </tr>
 		    <tr>
 		      <th>3</th>
 		      <td>Larry</td>
 		      <td>the Bird</td>
 		      <td>@twitter</td>
+          <td>
+            <span class="col-4 col-md-2 col-lg-2">X</span>
+            <span class="col-4 col-md-2 col-lg-2">Y</span>
+            <span class="col-4 col-md-2 col-lg-2">Z</span>
+          </td>
 		    </tr>
 		  </tbody>
 		</table>
@@ -91,7 +107,15 @@
     });
 
     $(document).ready( function () {
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+        "columns": [
+      { "width": "10%" },
+      null,
+      null,
+      null,
+      { "width": "15%" }
+      ]
+    });
     } );
   </script>
 

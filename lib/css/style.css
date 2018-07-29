@@ -25,3 +25,7 @@ input, select{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+h1{
+  margin-bottom: 30px;
+}
